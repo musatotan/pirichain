@@ -1,5 +1,6 @@
-node_modules
-test
 .idea
-dist
+.DS_Store
+node_modules
+src
+test
 test.js
