@@ -1,7 +1,7 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/getToken";
 
-export const getToken = (assetID) => client.post(endpoint, {
+module.exports.getToken = (assetID) => client.post(endpoint, {
     "assetID": assetID
 });

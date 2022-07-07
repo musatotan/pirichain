@@ -1,8 +1,8 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/createToken";
 
-export const createToken = (
+module.exports.createToken = (
     creatorAddress,
     privateKey,
     tokenName,

@@ -1,5 +1,5 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/listDelegationTopN";
 
-export const listDelegationTopN = () => client.post(endpoint);
+module.exports.listDelegationTopN = () => client.post(endpoint);

@@ -1,7 +1,7 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/getPiriPrice";
 
-export const getPiriPrice = (type) => client.post(endpoint, {
+module.exports.getPiriPrice = (type) => client.post(endpoint, {
     "type": type
 });

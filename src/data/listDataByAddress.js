@@ -1,8 +1,8 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/listDataByAddress";
 
-export const listDataByAddress = (address, limit, skip) => client.post(endpoint, {
+module.exports.listDataByAddress = (address, limit, skip) => client.post(endpoint, {
     "address": address,
     "limit": limit,
     "skip": skip

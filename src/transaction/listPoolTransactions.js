@@ -1,5 +1,5 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/listPoolTransactions";
 
-export const listPoolTransactions = () => client.post(endpoint);
+module.exports.listPoolTransactions = () => client.post(endpoint);

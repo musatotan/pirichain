@@ -1,4 +1,4 @@
-import client from '../../config/client';
+const {client} = require('../../config/client')
 
 const endpoint = '/rescuePrivateKey';
 
@@ -6,7 +6,7 @@ const endpoint = '/rescuePrivateKey';
  * @param {string} words
  * @param {string} language
  */
-export const rescuePrivateKey = (words, language = 'english') => client.post(endpoint, {
+module.exports.rescuePrivateKey = (words, language = 'english') => client.post(endpoint, {
     'words': words,
     'language': language
 });

@@ -1,5 +1,5 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/getCirculation";
 
-export const getCirculation = () => client.post(endpoint);
+module.exports.getCirculation = () => client.post(endpoint);

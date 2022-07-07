@@ -1,7 +1,7 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = '/search';
 
-export const search = (value) => client.post(endpoint, {
+module.exports.search = (value) => client.post(endpoint, {
     'value': value
 });

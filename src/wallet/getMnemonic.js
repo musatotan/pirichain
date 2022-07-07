@@ -1,8 +1,8 @@
-import client from '../../config/client';
+const {client} = require('../../config/client')
 
 const endpoint = '/getMnemonic';
 
-export const getMnemonic = (pKey, language = 'english') => client.post(endpoint, {
+module.exports.getMnemonic = (pKey, language = 'english') => client.post(endpoint, {
     'privateKey': pKey,
     'language': language
 });

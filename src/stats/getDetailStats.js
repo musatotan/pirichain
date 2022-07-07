@@ -1,5 +1,5 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/getDetailStats";
 
-export const getDetailStats = () => client.post(endpoint);
+module.exports.getDetailStats = () => client.post(endpoint);

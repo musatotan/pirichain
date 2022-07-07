@@ -1,8 +1,8 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/getOnlyBlocks";
 
-export const getOnlyBlocks = (skip, limit) => client.post(endpoint, {
+module.exports.getOnlyBlocks = (skip, limit) => client.post(endpoint, {
     "skip": skip,
     "limit": limit
 });

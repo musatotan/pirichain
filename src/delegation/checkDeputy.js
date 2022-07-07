@@ -1,7 +1,7 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/checkDeputy";
 
-export const checkDeputy = (address) => client.post(endpoint, {
+module.exports.checkDeputy = (address) => client.post(endpoint, {
     "address": address
 });

@@ -1,8 +1,8 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/pushData";
 
-export const pushData = (address, privateKey, to, key, value, enc) => client.post(endpoint, {
+module.exports.pushData = (address, privateKey, to, key, value, enc) => client.post(endpoint, {
     "address": address,
     "privateKey": privateKey,
     "to": to,

@@ -1,8 +1,8 @@
-import client from "../../config/client";
+const {client} = require('../../config/client')
 
 const endpoint = "/listTokens";
 
-export const listTokens = (skip, limit) => client.post(endpoint, {
+module.exports.listTokens = (skip, limit) => client.post(endpoint, {
     "skip": skip,
     "limit": limit
 });

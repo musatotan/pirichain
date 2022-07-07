@@ -1,8 +1,9 @@
-import {create} from "apisauce";
-import {Enviroment} from './enviroment';
+const {create} = require("apisauce");
 
 const apiClient = create({
-    baseURL: Enviroment.SERVER_URL
+    baseURL: 'http://213.159.4.3/'
 });
 
-export default apiClient;
+module.exports = {
+    client : apiClient
+}

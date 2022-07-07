@@ -1,7 +1,7 @@
-import client from "../../config/client";
+const {client} = require('../../config/client');
 
 const endpoint = "/getBlock";
 
-export const getBlock = (blockNumber) => client.post(endpoint, {
+module.exports.getBlock = (blockNumber) => client.post(endpoint, {
     "blockNumber": blockNumber
 });
