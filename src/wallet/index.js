@@ -1,5 +1,13 @@
-export {createNewAddress} from './createNewAddress';
-export {getBalance} from './getBalance';
-export {getBalanceList} from './getBalanceList';
-export {getMnemonic} from './getMnemonic';
-export {rescuePrivateKey} from './rescuePrivateKey';
+const {createNewAddress} = require("./createNewAddress");
+const {getBalance} = require("./getBalance");
+const {getBalanceList} = require("./getBalanceList");
+const {getMnemonic} = require("./getMnemonic");
+const {rescuePrivateKey} = require("./rescuePrivateKey");
+
+module.exports = {
+    createNewAddress : createNewAddress,
+    getBalance: getBalance,
+    getBalanceList: getBalanceList,
+    getMnemonic: getMnemonic,
+    rescuePrivateKey: rescuePrivateKey
+}

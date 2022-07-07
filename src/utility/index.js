@@ -1,2 +1,6 @@
-export {isValidAddress} from './isValidAddress';
-export {search} from './search';
+const {isValidAddress} = require('./isValidAddress');
+const {search} = require('./search');
+module.exports = {
+    isValidAddress: isValidAddress,
+    search: search
+}

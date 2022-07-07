@@ -1,4 +1,11 @@
-export {createToken} from './createToken';
-export {getToken} from './getToken';
-export {listTokens} from './listTokens';
-export {sendToken} from './sendToken';
+const {createToken} = require('./createToken');
+const {getToken} = require('./getToken');
+const {listTokens} = require('./listTokens');
+const {sendToken} = require('./sendToken');
+
+module.exports = {
+    createToken: createToken,
+    getToken: getToken,
+    listTokens: listTokens,
+    sendToken: sendToken
+}

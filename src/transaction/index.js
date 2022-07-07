@@ -1,6 +1,15 @@
-export {getDetailsOfAddress} from './getDetailsOfAddress';
-export {getTransaction} from './getTransaction';
-export {listPoolTransactions} from './listPoolTransactions';
-export {listTransactions} from './listTransactions';
-export {listTransactionsByAddr} from './listTransactionsByAddr';
-export {listTransactionsByAssetID} from './listTransactionsByAssetID';
+const {getDetailsOfAddress} = require('./getDetailsOfAddress');
+const {getTransaction} = require('./getTransaction');
+const {listPoolTransactions} = require('./listPoolTransactions');
+const {listTransactions} = require('./listTransactions');
+const {listTransactionsByAddr} = require('./listTransactionsByAddr');
+const {listTransactionsByAssetID} = require('./listTransactionsByAssetID');
+
+module.exports  = {
+    getDetailsOfAddress: getDetailsOfAddress,
+    getTransaction: getTransaction,
+    listPoolTransactions: listPoolTransactions,
+    listTransactions: listTransactions,
+    listTransactionsByAddr: listTransactionsByAddr,
+    listTransactionsByAssetID: listTransactionsByAssetID
+}
