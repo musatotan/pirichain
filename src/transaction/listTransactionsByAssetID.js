@@ -2,8 +2,9 @@ const {client} = require('../../config/client')
 
 const endpoint = "/listTransactionsByAssetID";
 
-module.exports.listTransactionsByAssetID = (skip, limit, assetID) => client.post(endpoint, {
+module.exports.listTransactionsByAssetID = (skip, limit, assetID, desc = false) => client.post(endpoint, {
     "skip": skip,
     "limit": limit,
-    "assetID": assetID
+    "assetID": assetID,
+    "desc": desc.toString()
 });

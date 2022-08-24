@@ -1,7 +1,7 @@
 const {create} = require("apisauce");
 
 const apiClient = create({
-    baseURL: 'http://213.159.4.3/'
+    baseURL: 'https://core.pirichain.com/'
 });
 
 module.exports = {
