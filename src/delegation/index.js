@@ -5,6 +5,7 @@ const {listDeputies} = require('./listDeputies');
 const {listMyDelegation} = require('./listMyDelegation');
 const {unFreezeCoin} = require('./unFreezeCoin');
 const {listDelegationTopN} = require('./listDelegationTopN');
+const {getMyRewardQuantity} = require("./getMyRewardQuantity");
 
 module.exports = {
     checkDeputy: checkDeputy,
@@ -13,5 +14,6 @@ module.exports = {
     listDeputies: listDeputies,
     listMyDelegation: listMyDelegation,
     unFreezeCoin: unFreezeCoin,
-    listDelegationTopN: listDelegationTopN
+    listDelegationTopN: listDelegationTopN,
+    getMyRewardQuantity: getMyRewardQuantity
 }
