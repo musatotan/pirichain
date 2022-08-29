@@ -4,6 +4,7 @@ const {listPoolTransactions} = require('./listPoolTransactions');
 const {listTransactions} = require('./listTransactions');
 const {listTransactionsByAddr} = require('./listTransactionsByAddr');
 const {listTransactionsByAssetID} = require('./listTransactionsByAssetID');
+const {getPoolTransaction} = require("./getPoolTransaction");
 
 module.exports  = {
     getDetailsOfAddress: getDetailsOfAddress,
@@ -11,5 +12,6 @@ module.exports  = {
     listPoolTransactions: listPoolTransactions,
     listTransactions: listTransactions,
     listTransactionsByAddr: listTransactionsByAddr,
-    listTransactionsByAssetID: listTransactionsByAssetID
+    listTransactionsByAssetID: listTransactionsByAssetID,
+    getPoolTransaction: getPoolTransaction
 }
