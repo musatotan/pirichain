@@ -1,6 +1,6 @@
 {
   "name": "@piriblockchain/core",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "dependencies": {
     "apisauce": "^2.1.5"
   },

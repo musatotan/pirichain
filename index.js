@@ -7,5 +7,6 @@ module.exports = {
     Utility : require('./src/utility'),
     Delegation : require('./src/delegation'),
     BuyPiri : require('./src/buypiri'),
-    Stats : require('./src/stats')
+    Stats : require('./src/stats'),
+    Scenario: require('./src/scenario')
 }
