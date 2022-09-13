@@ -2,8 +2,12 @@ const {client} = require('../../config/client')
 
 const endpoint = "/createScenario";
 
-module.exports.createScenario = (address, privateKey, scenarioText) => client.post(endpoint, {
+module.exports.createScenario = (address, privateKey, scenarioText, name, description, tags) => client.post(endpoint, {
     "address": address,
     "privateKey": privateKey,
-    "scenarioText": scenarioText
+    "scenarioText": scenarioText,
+    "name": name,
+    "description": description,
+    "tags": tags
+
 });
