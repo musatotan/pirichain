@@ -1,7 +1,7 @@
 const {create} = require("apisauce");
 
 const apiClient = create({
-    baseURL: 'https://core.pirichain.com/'
+    baseURL: !global.piriChainNetworkIsTestNet?'https://core.pirichain.com/':'https://testnet.pirichain.com/'
 });
 
 module.exports = {
